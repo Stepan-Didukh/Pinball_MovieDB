@@ -41,8 +41,6 @@ export const Header = () => {
                 <img src={Search} className={`Mobile-search`}/>
             </div>
 
-
-
             <div className={`Menu`}>
                 <div className={`${HR}__MenuLine`}/>
                 <div className={`${HR}__MenuLine`}/>
@@ -54,11 +52,15 @@ export const Header = () => {
                 <img src={Search} className={`Search`} alt='Search'/>
             </div>
 
-            <div className={`${HR}-User-Box`}>
-                <img src={UserPhoto}/>
-                <Link className={`${HR}-welcome-User`}>Welcome John</Link>
+            <div>
+                dark theme
             </div>
 
+
+            <div className={`${HR}-User-Box`}>
+                <img src={UserPhoto}/>
+                <Link className={`${HR}-welcome-User`} to={'/not-found'}>Welcome John</Link>
+            </div>
 
         </header>
 
