@@ -1,10 +1,9 @@
 .header-components {
     width: 100%;
     height: 112px;
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.15));
-    background-color: #ffffff;
     display: flex;
     justify-content: space-around;
+    box-shadow: 0 0 5px black;
 }
 
 .header-components-logo_box {
@@ -117,12 +116,12 @@
 }
 
 .header-components-User-Box {
-    margin-top: 2rem;
+    margin-top: 1.6rem;
     display: flex;
     height: 3rem;
 }
 
-.header-components-search-mobile-box{
+.header-components-search-mobile-box {
     display: none;
 }
 
@@ -136,10 +135,11 @@
     margin: 1rem;
 }
 
+
 @media (max-width: 1024px) {
     .header-components-User-Box,
     .header-components-search-Box,
-    .Menu {
+    .Menu{
         display: none;
     }
 
@@ -163,7 +163,7 @@
     }
 
     .header-components-mobile-menu:hover,
-    .header-components-search-mobile-box:hover{
+    .header-components-search-mobile-box:hover {
         box-shadow: 0 0 5px grey;
     }
 
@@ -171,7 +171,8 @@
         padding-left: 0;
     }
 
-    .Mobile-search{
+    .Mobile-search {
         margin: 10px 10px 10px 24px;
     }
 }
+

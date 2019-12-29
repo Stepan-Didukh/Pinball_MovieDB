@@ -1,13 +1,21 @@
 import React, {Component} from 'react'
 import './MoviesPage.css'
-import {Header} from "../../components/Header/Header";
-
 
 class MoviesPage extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            display: false,
+            isDark: false
+        };
+    }
+
 
     render() {
         return (
-            <Header/>
+
+            <div></div>
 
         )
     }

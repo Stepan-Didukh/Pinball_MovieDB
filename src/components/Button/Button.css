@@ -1,6 +1,4 @@
 .default-btn {
-    width: 100px;
-    padding: 15px 20px;
-    border: 1px solid #282c34;
-    margin: 15px;
+    border: 1px solid #e7e7e7;
+    color: #8c8c8c;
 }
