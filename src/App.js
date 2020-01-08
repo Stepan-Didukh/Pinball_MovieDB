@@ -8,7 +8,6 @@ import {
 
 import MoviesPage from "./conteiner/MoviesPage/MoviesPage";
 import NotFoundPage from "./conteiner/NotFoundPage/NotFoundPage";
-import {Header} from "./components/Header/Header";
 import PageLayout from "./components/PageLayout";
 
 function App() {
@@ -16,9 +15,7 @@ function App() {
     return (
         <Router>
             <PageLayout>
-            <Header/>
             <Switch>
-
                 <Route exact path="/">
                     <MoviesPage/>
                 </Route>

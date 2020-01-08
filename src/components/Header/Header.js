@@ -57,7 +57,7 @@ export const Header = () => {
 
                 <div className={`${HR}-User-Box`}>
                     <img src={UserPhoto} alt='User'/>
-                    <Link className={`${HR}-welcome-User`} to={'/not-found'}>Welcome John</Link>
+                    <Link className={`${HR}-welcome-User`} to={'/'}>Welcome John</Link>
                 </div>
 
             </header>
