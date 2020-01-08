@@ -23,34 +23,28 @@ class MoviesPage extends Component {
 
         }).then(res => res.json())
             .then(json => {
-
+                for(let i=0; i<20; i++){
                 this.setState({
-                        data: json.results
+                        data: json.results[i]
                     }
                 )
-            });
+            }});
     }
 
-    onChange = () => {
-      const {data} = this.state;
-        console.log(data);
-        for(let i=0; i<20; i++){
-            console.log(data[i]);
-        }
-    }
+
 
     render() {
-        // const {data} = this.state;
-        //
-        // console.log(data[0]);
+        const {data} = this.state;
+
+        console.log(data);
 
         return (
             <div>
                 <Header/>
 
-                <div>
-                    {this.onChange()}
-                </div>
+            <li>
+                {data.id}
+            </li>
 
             </div>
         )
