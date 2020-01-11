@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 class MoviesList extends Component {
 
     componentDidMount() {
-        this.props.fetchData('3/discover/movie?page=2');
+        this.props.fetchData('https://api.themoviedb.org/3/discover/movie?page=2/results');
         console.log(this.props.movies);
     }
 
