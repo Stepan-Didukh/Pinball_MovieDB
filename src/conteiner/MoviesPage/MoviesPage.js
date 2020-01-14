@@ -1,20 +1,23 @@
-import React, {Component} from 'react'
-import './MoviesPage.css'
-import {Header} from "../../components/Header/Header";
-import Movie from "../../components/MoviesList/MoviesList";
+import React, {Component} from 'react';
+
+import {Header} from '../../components/Header/Header';
+import {Main} from '../../components';
+
 
 class MoviesPage extends Component {
 
     render() {
+        const { getMovies, movies} = this.props;
 
         return (
-            <div>
-
+            <>
                 <Header/>
-                <Movie/>
-            </div>
-        )
-
+                <Main
+                    getMovies={getMovies}
+                    movies={movies}
+                />
+            </>
+        );
     }
 }
 

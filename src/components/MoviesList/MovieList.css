@@ -1,0 +1,23 @@
+.listFilms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.listFilms > div {
+    width: 23%;
+    height: auto;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px  grey;
+    transition: 0.7s ease-out;
+    margin: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .listFilms {
+        display: block;
+    }
+}

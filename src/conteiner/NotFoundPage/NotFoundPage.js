@@ -15,7 +15,7 @@ const NotFoundPage = (props) => {
 
     return (
         <div className={CN}>
-            <img alt="not-found" src={NotFoundImg}/>
+            <img className={'NotFound'} alt="not-found" src={NotFoundImg}/>
             <Button onClick={onGoHomeClick} label="Go Home" className={`${CN}__btn`}/>
         </div>
     );

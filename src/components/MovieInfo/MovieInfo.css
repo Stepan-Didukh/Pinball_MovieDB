@@ -1,0 +1,19 @@
+.movieInfo p{
+    width: 90%;
+    height: 84px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #acaaaa;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    margin: 5%;
+}
+
+.movieInfo h3{
+    font-size: 18px;
+    line-height: 27px;
+    color: #717171;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    margin-left: 5%;
+}

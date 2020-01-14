@@ -6,7 +6,7 @@ import {
     Redirect
 } from 'react-router-dom';
 
-import MoviesPage from "./conteiner/MoviesPage/MoviesPage";
+import MoviesPage from "./conteiner/MoviesPage";
 import NotFoundPage from "./conteiner/NotFoundPage/NotFoundPage";
 import PageLayout from "./components/PageLayout";
 
