@@ -1,7 +1,9 @@
-import {GET_FILMS} from "../actions-types/actions-types";
+import {FINISH_SHOW_LOADING, GET_FILMS, GET_GENRES, SHOW_LOADING} from "../actions-types/actions-types";
 
 const initialState ={
-    movies:[]
+    movies:[],
+    genres: {},
+    loading:false
 };
 
 const MovieReducer = (state = initialState, action) =>{
@@ -12,6 +14,26 @@ const MovieReducer = (state = initialState, action) =>{
             return {
                 ...state,
                 movies
+            }
+        }
+        case GET_GENRES:{
+            const {payload: {genres}} = action;
+
+            return {
+                ...state,
+                genres
+            }
+        }
+        case SHOW_LOADING:{
+            return {
+                ...state,
+                loading:true
+            }
+        }
+        case FINISH_SHOW_LOADING:{
+            return {
+                ...state,
+                loading: false
             }
         }
         default:

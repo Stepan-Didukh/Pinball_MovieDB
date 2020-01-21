@@ -1,0 +1,13 @@
+.genreBadge{
+    display: flex;
+    margin-left: 1rem;
+}
+
+.genreBadge > div {
+    padding-left: 2%;
+}
+
+.genreBadge p {
+    margin: 0;
+    padding-left: 3%;
+}

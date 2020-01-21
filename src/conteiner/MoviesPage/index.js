@@ -3,19 +3,22 @@ import {withRouter} from 'react-router';
 
 import MoviesPageComponent from './MoviesPage';
 
-import {getMovies} from '../../actions';
+import {getMovies, getGenres} from '../../actions';
 
 
 const mapStateToProps = (state) => {
-    const {MovieReducer: {movies}} = state;
+    const {MovieReducer: {movies, loading, genres}} = state;
 
     return {
-        movies
+        movies,
+        loading,
+        genres
     };
 };
 
 const mapDispatchToProps = {
-    getMovies
+    getMovies,
+    getGenres
 };
 
 const MoviesPageWithConnect = connect(

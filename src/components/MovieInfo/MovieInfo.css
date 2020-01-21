@@ -1,6 +1,6 @@
-.movieInfo p{
+.movieInfo p {
     width: 90%;
-    height: 84px;
+    height: fit-content;
     font-size: 13px;
     line-height: 16px;
     color: #acaaaa;
@@ -9,11 +9,47 @@
     margin: 5%;
 }
 
-.movieInfo h3{
+.movieInfo h3 {
     font-size: 18px;
     line-height: 27px;
     color: #717171;
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     margin-left: 5%;
 }
+
+.movieInfo hr {
+    color: #717171;
+}
+
+.Facebook {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background: #bbbbbb;
+    margin: 0.5rem;
+
+}
+
+.Facebook a img {
+    margin-left: 6px;
+    margin-top: 5px;
+}
+
+.Facebook:hover {
+    box-shadow: 0 0 5px grey;
+}
+
+.display_flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dv-star-rating {
+    margin-top: 0.6rem;
+}
+
+hr {
+    margin: 0;
+}
+

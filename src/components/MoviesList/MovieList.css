@@ -7,17 +7,35 @@
 
 .listFilms > div {
     width: 23%;
-    height: auto;
+    height: fit-content;
     border-radius: 3px;
     background-color: #ffffff;
-    box-shadow: 0 0 5px  grey;
-    transition: 0.7s ease-out;
+    box-shadow: 0 0 5px grey;
+    transition: 0.55s ease-out;
     margin: 10px;
 }
 
+.listFilms>div:hover{
+    box-shadow: 0 0 12px black;
+}
 
 @media (max-width: 1024px) {
+    .listFilms >div{
+        width: 22%;
+    }
+}
+
+@media (max-width: 750px) {
     .listFilms {
         display: block;
     }
+
+    .listFilms > div {
+        width: 100%;
+        margin: 0;
+
+    }
 }
+
+
+

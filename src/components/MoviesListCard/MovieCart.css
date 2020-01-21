@@ -1,5 +1,5 @@
 .Ellipse{
-    width: 21px;
+    height: fit-content;
     border-radius: 11px;
     background-color: #d6d6d6;
 }

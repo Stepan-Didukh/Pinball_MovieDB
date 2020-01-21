@@ -9,6 +9,8 @@ import {
 import MoviesPage from "./conteiner/MoviesPage";
 import NotFoundPage from "./conteiner/NotFoundPage/NotFoundPage";
 import PageLayout from "./components/PageLayout";
+import UserInfo from "./conteiner/UserInfo/UserInfo";
+
 
 function App() {
 
@@ -26,6 +28,9 @@ function App() {
                         <NotFoundPage {...routeProps}/>
                     )}
                 />
+                <Route path={'/user_info'}>
+                    <UserInfo/>
+                </Route>
 
                 <Redirect
                     from="*"

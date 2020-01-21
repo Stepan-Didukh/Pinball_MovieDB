@@ -1,18 +1,22 @@
 import axios from "axios";
+import {GET_GENRES} from "../actions-types/actions-types";
 
-class ApiAdapterGenres {
-    constructor() {
-        this.baseUrlPic = 'https://api.themoviedb.org/';
+export const getGenres = () => {
+    return (dispatch) => {
 
+        return axios.get('https://api.themoviedb.org/3/genre/movie/list?api_key=cc809c60b58f948232bce08b642e354e')
+            .then(({data = {}}) => {
+
+                dispatch({
+                    type: GET_GENRES,
+                    payload: {
+                        genres: data
+                    }
+                });
+
+            })
+            .catch(err => {
+                console.log(err);
+            });
     }
-
-    getPic(endpoint) {
-        return axios.get(`${this.baseUrlPic}/${endpoint}`, {
-            headers: {
-                Authorization: 'Bearer ' + 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ODJlN2Q1M2M3MTQ3OTFmZjczZmU4NzA3ODdmMDgxNSIsInN1YiI6IjU3ZWE0NjY0OTI1MTQxMTA4OTAwOGZjNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.lEEivZliSc_G_UGJbP8p1LRlPXWu3U9erTCsUnRWP_U'
-            }
-        })
-    }
-}
-
-export const AdapterGenres = new ApiAdapterGenres();
+};

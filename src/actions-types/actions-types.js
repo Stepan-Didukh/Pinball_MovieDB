@@ -1,1 +1,4 @@
 export const GET_FILMS  ='GET_FILMS';
+export const GET_GENRES  ='GET_GENRES';
+export const SHOW_LOADING = 'SHOW_LOADING';
+export const FINISH_SHOW_LOADING = 'FINISH_SHOW_LOADING';
